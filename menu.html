@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible"content="IE=edge">
+    <meta name="viewport"content="width=device-width,initial-scale=1.0">
+    <title>Menu</title>
+    <style>
+        body{
+            background:rgb(255,255,255);
+        }
+        h1{
+            font-size:50px;
+            color:rgb(190,190,190);
+            border-bottom-width:2px;
+            border-bottom-style:solid;
+            border-bottom-color:rgb(190,190,190);
+        }
+        #menu,
+        #menu ul{
+            font-size:25px;
+            padding:0;
+            list-style:none;
+            width:200px;
+        }
+        #menu li{
+            position:relative;
+            background:rgb(255,255,255);
+            color:rgb(25,40,210);
+            border-right-style:solid;
+            border-right-color:rgb(190,190,190);
+            border-right-width:2px;
+        }
+        #menu a{
+            display:block;
+            text-decoration:none;
+            color:rgb(25,40,210);
+        }
+        #menu ul{
+            position:absolute;
+        }
+        #menu li:hover ul{
+            left:200px;
+            top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Le pont mirabeau</h1>
+    <ul id="menu">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Services</a>
+            <ul>
+                <li><a href="#">Strategy</a></li>
+                <li><a href="#">Optimization</a></li>
+            </ul>
+        </li>
+        <li><a href="#">Publications</a>
+            <ul>
+                <li><a href="#">Articles</a></li>
+                <li><a href="#">Tutorials</a></li>
+            </ul>
+        </li>
+        <li><a href="#">Events</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+</body>
+</html>
